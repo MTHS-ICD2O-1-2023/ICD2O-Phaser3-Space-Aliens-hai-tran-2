@@ -1,20 +1,20 @@
 /* global Phaser */
 
-// Copyright (c) 2024 Hai Tran All rights reserved
+// Copyright (c) 2020 Mr. Coxall All rights reserved
 //
-// Created by: hai Tran
+// Created by: Hai Tran
 // Created on: April 2024
-// This is the Splash Scene
+// This is the Title Scene
 
 /**
- * This class is the Splash Scene.
+ * This class is the title scene
  */
-class SplashScene extends Phaser.Scene {
+class TitleScene extends Phaser.Scene {
   /**
    * This method is the constructor
    */
   constructor() {
-    super({ key: "splashScene" })
+    super({ key: "titleScene" })
   }
 
   /**
@@ -23,7 +23,7 @@ class SplashScene extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start()
    */
   init(data) {
-    this.cameras.main.setBackgroundColor("ffffff")
+    this.cameras.main.setBackgroundColor("#ffffff")
   }
 
   /**
@@ -31,7 +31,7 @@ class SplashScene extends Phaser.Scene {
    * use it to load assets
    */
   preload() {
-    console.log("Splash Scene")
+    console.log("Title Scene")
   }
 
   /**
@@ -50,8 +50,8 @@ class SplashScene extends Phaser.Scene {
    * @param {number} delta - Delta time in ms since the last frame
    */
   update(time, delta) {
-    this.scene.switch("titleScene")
+    // pass
   }
 }
 
-export default SplashScene
+export default TitleScene
